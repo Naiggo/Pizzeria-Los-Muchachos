@@ -1,0 +1,102 @@
+ <!DOCTYPE html>
+<html lang="en">9
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" c ontent="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño One page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Oswald:wght@700&family=Raleway:ital,wght@1,300&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css"><script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#menu a").on("click", function(t) {
+                if (""!==this.hash) {
+                    t.preventDefault();
+                    var e=this.hash;
+                    $("html,body").animate({
+                        scrollTop:$(e).offset().top},
+                        800,
+                        function() {
+                            window.location.hash=e
+                        }
+                    )}
+                })
+            });
+    </script>
+</head>
+
+<body id="Inicio">
+    
+    <header>
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Servicios">Servicios</a></li>
+                    <li><a href="#Productos">Productos</a></li>
+                    <li><a href="#Nosotros">Nosotros</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div id="principal">
+            <article>
+                <div class="contenido">
+                    <h1>Pizzeria</h1>
+                    <hr>
+
+                    <img src="image/pizza-napolitana-kt9E--1200x630@abc.jpg" alt="">
+
+                    <h2 id="Servicios">Servicios</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ut amet esse, minima error dolore
+                        saepe rem dignissimos impedit laboriosam enim autem unde aperiam similique? Id possimus dolore
+                        blanditiis neque.</p>
+
+                    <h2 id="Productos">Productos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ut amet esse, minima error dolore
+                        saepe rem dignissimos impedit laboriosam enim autem unde aperiam similique? Id possimus dolore
+                        blanditiis neque.</p>
+
+                    <h2 id="Nosotros">Nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ut amet esse, minima error dolore
+                        saepe rem dignissimos impedit laboriosam enim autem unde aperiam similique? Id possimus dolore
+                        blanditiis neque.</p>
+
+                    <h2 id="Contacto">Contacto</h2>
+                    <form>
+                        <fieldset>
+                            <legend>Llena el siguiente formulario</legend>
+                            <table>
+                                <tr>
+                                    <td><label>Nombre</label></td>
+                                    <td><input type="text" placeholder="Ingresa tu nombre"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Correo</label></td>
+                                    <td><input email="text" placeholder="Ingresa tu Correo"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Mensaje:</label></td>
+                                    <td><textarea placeholder="Ingresa tu Mensaje"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td><input type="submit" value="ENVIAR"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </form>
+                </div>
+            </article>
+        </div>
+    </section>
+   
+</body>
+
+</html>

@@ -189,7 +189,7 @@ input[type="submit"]:hover {
 }
 
 .footer-link:hover{
-    /* Nacho */
+    /* Nacho agregar*/
 }
 
 .footer-bottom-container{
@@ -227,50 +227,3 @@ input[type="submit"]:hover {
     }
 
 }
-
-/* #seccion-contacto{
-    width: 500px;
-    margin: auto;
-    position: relative;
-}
-
-.footer-options{
-    font-size: large;
-}
-
-.lista-cabecera-menu, .lista-footer-menu, .contacto-footer, .lista-redes-footer{
-    list-style: none;
-}
-
-.lista-footer-menu{
-    display: flex;
-    flex-direction: column;
-}
-
-.lista-cabecera-menu{
-    display: flex;
-    justify-content: space-around;
-    font-size: 150%;
-    font-weight: bold;
-}
-
-.footer-options{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 5% 5%;
-}
-
-.lista-redes-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.data-contacto-footer{
-    padding-left: 40%;
-}
-
-.icon-contacto-footer{
-    padding-left: 30%;
-} */

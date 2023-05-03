@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #ffffff;
+    background: rgb(248, 248, 248);
 }
 
 #menu {
@@ -12,6 +12,67 @@ body {
     width: 100%;
     z-index: 2;
 }
+
+/*slider*/
+
+.slider-frame {
+    width: 1280px;
+    height: auto;
+    margin: 0px auto 0;
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 50%;
+    list-style: none;
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
 
 #menu li {
     list-style: none;
@@ -28,23 +89,36 @@ body {
 }
 
 #principal {
-    width: 500px;
+    width: 600px;
     margin: auto;
     position: relative;
 }
 
+#seccion-contacto {
+    width: 450px;
+    margin: 55px;
+    position: relative;
+
+}
+
+
+#seccion-familia {
+    margin: auto;
+    position: relative;
+    width: 600px;
+    padding: 50px;
+    border-radius: 10px;
+    background: #780bfd
+}
+
 .contenido {
-    margin: 100px 0;
+
+    margin: 100px 100;
     border: 1px solid #ccc;
     padding: 50px;
     border-radius: 10px;
     box-shadow: 3px 3px 3px #ddd;
-    background: #fff;
-}
-
-.contenido img {
-    width: 400px;
-    border-radius: 5%;
+    background: #f8f6f6;*/
 }
 
 h1 {
@@ -57,6 +131,7 @@ h1 {
 h2 {
     font-family: 'Open Sans', sans-serif;
     padding-top: 70px;
+    text-align: center;
 }
 
 p {
@@ -102,7 +177,7 @@ input[type="submit"]:hover {
     opacity: 0.6;
 }
 
-/* FOOTER */
+/* FOOTER 
 .footer-container{
     display: flex;
     flex-wrap: wrap;
@@ -189,7 +264,7 @@ input[type="submit"]:hover {
 }
 
 .footer-link:hover{
-    /* Nacho agregar*/
+    /* Nacho agregar
 }
 
 .footer-bottom-container{
@@ -200,7 +275,7 @@ input[type="submit"]:hover {
     margin-right: auto;
 }
 
-/* MediaQ Footer */
+/* MediaQ Footer 
 @media (min-width: 640px){
     .footer-container{
         flex-direction: row;
@@ -226,4 +301,4 @@ input[type="submit"]:hover {
         flex-direction: row;
     }
 
-}
+}*/

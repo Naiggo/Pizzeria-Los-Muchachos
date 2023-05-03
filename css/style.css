@@ -103,6 +103,11 @@ input[type="submit"]:hover {
 }
 
 /* FOOTER */
+
+.footer{
+    background: #9e2a2b;
+}
+
 .footer-container{
     display: flex;
     flex-wrap: wrap;
@@ -130,25 +135,6 @@ input[type="submit"]:hover {
     line-height: 1.75rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
-}
-
-.footer-title img{
-    width: 5rem;
-    height: 5rem;
-    padding-top: 5rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.footer-title{
-    margin-left: 5rem
-}
-
-.footer-tagline{
-    font-size: 1.25rem;
-    line-height: 1.25rem;
-    text-align: center;
 }
 
 .footer-section-wrapper{
@@ -202,11 +188,35 @@ input[type="submit"]:hover {
 
 /*Contacto Form*/
 
+#div-seccion-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 50vh;
+    position: relative;
+}
+
+.img-fondo-section-form{
+    opacity: 0.5;
+    text-align: center;
+    object-fit: cover;
+    object-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 #seccion-contacto{
-    width: 40%;
+    position: absolute;
+    width: 50%;
     margin: auto;
     max-width: 1200px;
     margin: 0 auto;
+    border-style: groove;
+    border-color:black;
+    background-color: #f2f2f2;
 }
 
 #contacto-form-list{
@@ -216,6 +226,7 @@ input[type="submit"]:hover {
 
 #contacto-title{
     text-align: center;
+    padding: 1em;
 }
 
 #contacto-form-list li{
@@ -223,8 +234,8 @@ input[type="submit"]:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 #contacto-form-list li label{
@@ -249,16 +260,20 @@ input[type="submit"]:hover {
     margin-bottom: 20px;
 }
 
-/* MediaQ Footer */
-@media (min-width: 640px){
+/* MediaQ*/
+
+@media (max-width: 1500px){
+    /* MediaQ Form Section */
+    #contacto-form-list {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 820px){
+    /* MediaQ Footer */
     .footer-container{
         flex-direction: row;
-    }
-
-    .footer-info{
-        margin-left: 0;
-        margin-right: 0;
-        text-align: left;
     }
 
     .footer-tilte{

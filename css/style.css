@@ -177,6 +177,15 @@ input[type="submit"]:hover {
     opacity: 0.6;
 }
 
+#botonArriba 
+{
+  position: fixed;
+  bottom:20px;
+  right: 20px;
+  width: 40px; 
+  size: 5em;
+}
+
 /* FOOTER 
 .footer-container{
     display: flex;

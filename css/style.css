@@ -180,10 +180,11 @@ input[type="submit"]:hover {
 #botonArriba 
 {
   position: fixed;
-  bottom:20px;
-  right: 20px;
-  width: 40px; 
-  size: 5em;
+  bottom: 20px;
+  right: -100px;
+  width:  40px; 
+  transition: all 1s;
+  
 }
 
 /* FOOTER 

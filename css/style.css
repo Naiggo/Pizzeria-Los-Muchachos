@@ -103,15 +103,16 @@ body {
 
 
 #seccion-familia {
-    margin: auto;
-    position: relative;
-    width: 600px;
+    color: aliceblue;
+    margin: 55px;
+    position: absolute; right: 10px;
+    width: 400px;
     padding: 50px;
     border-radius: 10px;
-    background: #9e2a2b
+    background: #9e2a2b;
 }
 
-.contenido {
+/*.contenido {
 
     margin: 100px 100;
     border: 1px solid #ccc;
@@ -119,7 +120,7 @@ body {
     border-radius: 10px;
     box-shadow: 3px 3px 3px #ddd;
     background: #f8f6f6;
-}
+}*/
 
 h1 {
     font-family: 'Tiro Devanagari Hindi', serif;

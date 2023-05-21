@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" c ontent="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <title>Diseño One page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Oswald:wght@700&family=Raleway:ital,wght@1,300&family=Tiro+Devanagari+Hindi&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#menu a").on("click", function (t) {
+                if ("" !== this.hash) {
+                    t.preventDefault();
+                    var e = this.hash;
+                    $("html,body").animate({
+                        scrollTop: $(e).offset().top
+                    },
+                        800,
+                        function () {
+                            window.location.hash = e
+                        }
+                    )
+                }
+            })
+        });
+    </script>
+
+
+</head>
+
+<body id="Inicio">
+
+    <header>
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Productos">Productos</a></li>
+                    <li><a href="#Servicios">Servicios</a></li>
+                    <li><a href="#Nosotros">Nosotros</a></li>
+                    <li><a href="#Franquicia">Franquicia</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <article>
+        <section class="seccion-pizzas">          
+            <main>
+
+            </main>
+            <!-- <div id="div-seccion-empanadas">
+                <img class="img-fondo-section-empanadas" src="img/fondo-empanadas.webp" alt="fondo-pizza-section-form-contacto">
+                <section id="seccion-producto-empanadas">  
+                    <div class="empandas-title">
+                        <h1>Nuestras empanadas campeonas</h1>
+                    </div>
+                    <div class="container-empanadas">
+                        <div class="column-empanadas">
+                        <ul class="list-empanadas">
+                            <li>Empanada de carne</li>
+                            <li>Empanada de pollo</li>
+                            <li>Empanada de jamón y queso</li>
+                            <li>Empanada de jamón, huevo y queso</li>
+                            <li>Empanada de jamón, tomate y albahaca</li>
+                            <li>Empanada de queso y cebolla</li>
+                            <li>Empanada de roquefort con jamón</li>
+                            <li>Empanada de pollo</li>
+                            <li>Empanada de pollo al champignon</li>
+                            <li>Empanada de verdura</li>
+                            <li>Empanada de panceta y ciruela</li>
+                            <li>Empanada de vacío y provoleta</li>
+                        </ul>
+                        </div>
+                        <div class="column-empanadas">
+                        <ul class="list-empanadas">
+                            <li>Empanada de matambre a la pizza</li>
+                            <li>Empanada de salchicha y cheddar</li>
+                            <li>Empanada burger</li>
+                            <li>Empanada american chicken</li>
+                            <li>Empanada carne picante</li>
+                            <li>Empanada carne al cuchillo</li>
+                            <li>Empanada carne suave</li>
+                            <li>Empanada carne con aceituna</li>
+                            <li>Empanada cuatro quesos</li>
+                            <li>Empanada de choclo</li>
+                            <li>Empanada de calabaza</li>
+                        </ul>
+                        </div>
+                    </div>
+                </section>
+            </div> -->
+
+            <script src="js/datos.js"></script>
+            <script src="js/productos-pizzas.js"></script>
+        </section>
+    </article>
+
+
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section-wrapper">
+                <div class="footer-section">
+                    <h2 class="footer-menu">Ubicacion</h2>
+                    <!-- <div class="footer-map">
+                        <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.25131529687528!2d-58.37886349375962!3d-34.603629349771275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacef2f15b77%3A0x8bef196b9101ed07!2sAv.%20Corrientes%20870%2C%20C1043AAV%20San%20Nicolas%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1683247363330!5m2!1ses-419!2sar" width="120%" height="70%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div> -->
+                    <!-- <h2 class="footer-menu">Menu</h2>
+                    <nav class="footer-list">
+                        <li><a href="#Inicio" class="footer-link">Inicio</a></li>
+                        <li><a href="#Productos" class="footer-link">Productos</a></li>
+                        <li><a href="#Servicios" class="footer-link">Servicios</a></li>
+                        <li><a href="#Nosotros" class="footer-link">Nosotros</a></li>
+                        <li><a href="#Franquicia" class="footer-link">Franquicia</a></li>
+                        <li><a href="#Contacto" class="footer-link">Contacto</a></li>
+                    </nav> -->
+                </div>
+                <div class="footer-section">
+                    <h2 class="footer-menu">Contactenos</h2>
+                    <nav class="footer-list">
+                        <li class="footer-link">
+                            <H4>Telefono: </H4>4512-8751
+                        </li>
+                        <li class="footer-link">
+                            <H4>Whatsapp: </H4>+54 9 11-2554-4114
+                        </li>
+                        <li class="footer-link">
+                            <H4>Mail: </H4>pizzeria-los-muchachos@gmail.com
+                        </li>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <h2 class="footer-menu">Siganos</h2>
+                    <nav class="footer-list">
+                        <li><a href="www.facebook.com/pizzerialosmuchachos"><img
+                                    src="favicon/redes/icons8-facebook-48.png" /></a></li>
+                        <li><a href="www.twitter.com/pizzerialosmuchachos"><img
+                                    src="favicon/redes/icons8-twitter.svg" /></a></li>
+                        <li><a href="www.instagram.com/pizzerialosmuchachos"><img
+                                    src="favicon/redes/icons8-instagram-48.png" /></a></li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="footer-bottom-container">© Grupo 24 - Codo a Codo 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>

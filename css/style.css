@@ -103,8 +103,18 @@ input[type="submit"]:hover {
 }
 
 /* PRODUCTOS PIZZAS */
+
+#titulo-pizzas{
+    width: 800px;
+    height: 250px;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    color:#ffffff;
+    font-size: 100px;
+}
 .seccion-pizzas{
-    background-image: linear-gradient(180deg, #000, #333);
+    background-image: linear-gradient(180deg, #0e1118, #333);
     position: relative;
     /* top: 100px;
     margin-bottom: 120px; */
@@ -112,15 +122,20 @@ input[type="submit"]:hover {
 
 .tarjeta {
     background-color: #ffffff;
-    max-height: 510px;
-    height: 510px;
+    /* max-height: 510px;
+    height: 510px; */
+    max-height: 550px;
+    height: 550px;
     max-width: 300px;
     width: 300px;
     border: 1px solid #ffffff;
     border-radius: 10px;
-    /* box-shadow: 0 0 10px #727272; */
-    box-shadow: 0 0 30px #ffffff;
+    box-shadow: 0 0 10px #ffffff;
     margin: 15px;
+}
+
+.tarjeta:hover{
+    box-shadow: 0 0 40px #ffffff;
 }
 
 .tarjeta img {
@@ -144,6 +159,12 @@ input[type="submit"]:hover {
     text-align: center;
 }
 
+.textocard-descripcion{
+    min-height: 70px;
+    max-height: 70px;
+    height: 70px;
+}
+
 .tarjeta a {
     color: blanchedalmond;
     font-size: 23px;
@@ -160,11 +181,11 @@ input[type="submit"]:hover {
 }
 
 .contenedor {
+    height: 1835px;
     display: grid;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    place-self: center;
     grid-template-columns:repeat(4, 350px);
     grid-template-rows:repeat(3, 600px);
     column-gap: 20px;
@@ -189,17 +210,6 @@ input[type="submit"]:hover {
     object-position: center;
     background-size: cover;
     position: relative;
-}
-
-.img-fondo-section-pizzas{
-    /* width: 113%;
-    height: 112%;
-    display:block;
-    text-align: center;
-    object-fit: cover;
-    object-position: center;
-    background-size: cover;
-    position: absolute; */
 }
 
 /* SECCION EMPANADAS*/
@@ -416,6 +426,7 @@ input[type="submit"]:hover {
 
 .footer-link{
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .footer-link:hover{
@@ -430,38 +441,6 @@ input[type="submit"]:hover {
     margin-right: auto;
     color:#ccc;
 }
-
-/* .google-maps{
-    width: 100%;
-} */
-
-.footer-map{
-    overflow: hidden;
-    padding-bottom: 200%;
-    padding-right: 300%;
-    position: relative;
-    height: 0;
-}
-
-.footer-map iframe{
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 100% !important;
-    width: 100% !important;
-    position: absolute;
-}
-
-/* .footer-map iframe{
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 100% !important;
-    width: 100% !important;
-    position: absolute;
-} */
 
 /* MediaQ*/
 

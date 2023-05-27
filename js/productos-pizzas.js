@@ -7,7 +7,8 @@ for(let pizza of pizzasData.pizzas){
                 <img src= ${pizza.url_imagen}   alt="producto">
                 <div class="textocard">
                     <h2> ${pizza.nombre} </h2>
-                    <p> ${pizza.descripcion}  </p>
+                    <div class="textocard-descripcion"> <p> ${pizza.descripcion}  </p> </div>
+                    <h2> $${pizza.precio}  </h2>
                 </div>
             </div>
     `

@@ -405,8 +405,18 @@ input[type="submit"]:hover {
     font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
     flex-shrink: 3;
+}
+
+.footer-menu-c{
+    color:#ffffff;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    flex-shrink: 3;
+    padding-left: 12%;
 }
 
 .footer-list{
@@ -414,6 +424,12 @@ input[type="submit"]:hover {
     flex-direction: column;
     row-gap: 0.25rem;
     list-style: none;
+    align-items: center;
+}
+
+.footer-list-contacto{
+    list-style: none;
+    text-align: center;
 }
 
 .table-footer{

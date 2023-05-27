@@ -11,19 +11,21 @@ body {
     position: relative;
     padding-bottom: 3em;
     min-height: 100vh;
-}
-nav{
+} 
+.topnav{
     height: 80px;
     width: 100%;
     background: brown;
     z-index: 2;
 } 
-label.logo{
+#logo{
     font-size: 35px;
     font-weight: bold;
     color: white;
     padding: 0 100px;
     line-height: 80px; 
+    position: absolute;
+    animation-duration:3s;
 }
 nav ul{
     float: right;
@@ -36,7 +38,7 @@ nav li{
 }
 nav a{
     color: white;
-    font-size: 18px;
+    /* font-size: 18px; */
     text-transform: uppercase;
     padding: 7px 10px;
     border-radius: 3px;
@@ -56,7 +58,7 @@ nav #icon{
 
 }
 @media(max-width: 1048px){
- label.logo{
+ #logo{
  font-size: 32px;
  padding-left: 60px;
 }
@@ -102,18 +104,22 @@ nav a{
 }
 .slider{
     width: 100%;
-    max-height: 100vh;
+    max-height: 80vh;
     overflow: hidden;
-}/*
- .titulo1{
-    
-    position: absolute;
+}
+ .onslider{
+    display: flex;
+    position:absolute;
     color: aliceblue;
-    padding-top: 0;
-    font-size: 800%;
-    margin-left:20%;
+    min-width: 100%;
+    height: 51.4%;
+    justify-content: center;
+    align-items: center;
     background: rgba(5, 7, 12, 0.75);;
-}   */
+    z-index: 1;
+    font-size: 3em;
+}   
+
 .slider ul{
     display: flex;
     animation: cambio 20s infinite alternate linear;
@@ -140,7 +146,7 @@ nav a{
     75%{margin-left: -300%;}
     100%{margin-left:-300%;}
 }
-h1 {
+ h1 {
     font-family: 'Tiro Devanagari Hindi', serif;
     font-size: 3em;
     margin: 0;
@@ -156,7 +162,6 @@ h2 {
 p {
     font-family: 'Raleway', sans-serif;
     line-height: 1.5;
-    color: #666;
 }
 
 fieldset {
@@ -291,26 +296,41 @@ input[type="submit"]:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.titlenosotros{
+.titleserv{
     display: flex;
     justify-content: center;
     font-size: 6em;
     color: aliceblue;
-    min-width: 100vw;
+    min-width: 100%;
     padding-bottom: 70px; 
     margin-top: 2%;
 } 
 
 .servicios1{
     display: flex;
-    min-width: 100vw;
+    min-width: 100%;
     justify-content: space-between;
+    padding-bottom: 150px;
 }
 .textcervicios{
     color: aliceblue;
-    font-size: 1.5rem;
+    font-size: 1.3em;
     margin-left: 15px;
+    /* margin-right: 200px; */
+    max-width: 50%;
 } 
+.imgserv{
+    display: flex;
+    justify-content: center;
+    /* align-items:flex-end; */
+    align-items: center;
+    padding-right: 100px;
+} 
+.imgservpizza{
+    position: absolute; 
+    bottom: 24%;
+    z-index: -1;
+}
 
 /* SECCION EMPANADAS*/
 
@@ -382,7 +402,7 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: center;
     color: aliceblue;
-    font-size: 3em;
+    font-size: 2em;
     min-width: 100vw;
     margin-top: 2%;
     padding-bottom: 70px;

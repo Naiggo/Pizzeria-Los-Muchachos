@@ -18,12 +18,14 @@ body {
     background: brown;
     z-index: 2;
 } 
-label.logo{
+#logo{
     font-size: 35px;
     font-weight: bold;
     color: white;
     padding: 0 100px;
     line-height: 80px; 
+    position: absolute;
+    animation-duration:3s;
 }
 nav ul{
     float: right;
@@ -56,7 +58,7 @@ nav #icon{
 
 }
 @media(max-width: 1048px){
- label.logo{
+ #logo{
  font-size: 32px;
  padding-left: 60px;
 }
@@ -294,7 +296,7 @@ input[type="submit"]:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.titlenosotros{
+.titleserv{
     display: flex;
     justify-content: center;
     font-size: 6em;
@@ -308,17 +310,26 @@ input[type="submit"]:hover {
     display: flex;
     min-width: 100%;
     justify-content: space-between;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 .textcervicios{
     color: aliceblue;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-left: 15px;
-    margin-right: 200px;
+    /* margin-right: 200px; */
+    max-width: 50%;
 } 
 .imgserv{
-   padding-top: 100px;
-   padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    /* align-items:flex-end; */
+    align-items: center;
+    padding-right: 100px;
+} 
+.imgservpizza{
+    position: absolute; 
+    bottom: 24%;
+    z-index: -1;
 }
 
 /* SECCION EMPANADAS*/

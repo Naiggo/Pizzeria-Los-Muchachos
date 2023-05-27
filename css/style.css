@@ -1,53 +1,152 @@
-body {
+*{
     margin: 0;
     padding: 0;
-    background: #ffffff;
-}
-
-#menu {
-    background: #9e2a2b;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-}
-
-#menu li {
-    list-style: none;
-    display: inline;
-    margin-right: 40px;
-
-}
-
-#menu a {
-    color: aliceblue;
     text-decoration: none;
-    font-weight: bolder;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#principal {
-    width: 500px;
-    margin: auto;
+    list-style: none; 
+    box-sizing: border-box; 
+} 
+body {
+    background: rgb(248, 248, 248); 
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+} 
+.topnav{
+    height: 80px;
+    width: 100%;
+    background: brown;
+    z-index: 2;
+} 
+#logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px; 
+    position: absolute;
+    animation-duration:3s;
 }
-
-.contenido {
-    margin: 100px 0;
-    border: 1px solid #ccc;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 3px #ddd;
-    background: #fff;
+nav ul{
+    float: right;
+    margin-right: 40px;
 }
-
-.contenido img {
-    width: 400px;
-    border-radius: 5%;
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
 }
+nav a{
+    color: white;
+    /* font-size: 18px; */
+    text-transform: uppercase;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    border:1px solid white;
+    transition: .5s;
+}
+nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 
-h1 {
+}
+@media(max-width: 1048px){
+ #logo{
+ font-size: 32px;
+ padding-left: 60px;
+}
+nav ul{
+    margin-right: 20px;
+}
+nav a{
+    font-size: 17px;
+}
+}
+@media(max-width: 1500px) {
+    nav #icon{
+        display:block;    
+    } 
+    nav ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(190, 83, 40);
+        top: 80px;
+        /* left: -100%; */
+        text-align: center;
+        transition: .5s;
+        right: -130%;
+        z-index: 5;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border:none;
+        color: darkgoldenrod;
+    }
+    nav ul.show{
+    /* left: 0; */
+    right: -20px;
+    }
+}
+.slider{
+    width: 100%;
+    max-height: 80vh;
+    overflow: hidden;
+}
+ .onslider{
+    display: flex;
+    position:absolute;
+    color: aliceblue;
+    min-width: 100%;
+    height: 51.4%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(5, 7, 12, 0.75);;
+    z-index: 1;
+    font-size: 3em;
+}   
+
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left:-300%;}
+}
+ h1 {
     font-family: 'Tiro Devanagari Hindi', serif;
     font-size: 3em;
     margin: 0;
@@ -57,12 +156,12 @@ h1 {
 h2 {
     font-family: 'Open Sans', sans-serif;
     padding-top: 70px;
+    text-align: center;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
     line-height: 1.5;
-    color: #666;
 }
 
 fieldset {
@@ -191,10 +290,6 @@ input[type="submit"]:hover {
     column-gap: 20px;
 }
 
-#article-seccion-pizzas{
-    margin-top: -20%;
-}
-
 #div-seccion-pizzas{
     position: relative;
     width: 100%;
@@ -210,6 +305,49 @@ input[type="submit"]:hover {
     object-position: center;
     background-size: cover;
     position: relative;
+}
+
+/* SERVICIOS*/
+.servicios{
+    background-image:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5,7,12,0.75)),
+    url(/img/fondoservicios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titleserv{
+    display: flex;
+    justify-content: center;
+    font-size: 6em;
+    color: aliceblue;
+    min-width: 100%;
+    padding-bottom: 70px; 
+    margin-top: 2%;
+} 
+
+.servicios1{
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+.textcervicios{
+    color: aliceblue;
+    font-size: 1.3em;
+    margin-left: 15px;
+    /* margin-right: 200px; */
+    max-width: 50%;
+} 
+.imgserv{
+    display: flex;
+    justify-content: center;
+    /* align-items:flex-end; */
+    align-items: center;
+    padding-right: 100px;
+} 
+.imgservpizza{
+    position: absolute; 
+    bottom: 24%;
+    z-index: -1;
 }
 
 /* SECCION EMPANADAS*/
@@ -268,7 +406,47 @@ input[type="submit"]:hover {
     width: 100%;
     height: 120%;
 }
-
+/* FRANQUICIA */
+.sucursales{
+    background-image:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5,7,12,0.75)),
+    url(/img/fondosucursales.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+   
+}
+.sucursalestitle{ 
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 2em;
+    min-width: 100vw;
+    margin-top: 2%;
+    padding-bottom: 70px;
+}
+.ubicaciones{
+    display: flex;
+    min-width: 100vw;
+    min-height: 50vh;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    font-size: 2em;
+    text-align: center;
+    background-color: rgba(5, 7, 12, 0.75);
+    text-decoration: none;
+}
+#address1{
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+#address2{
+    padding-bottom: 20px;
+}
+#address3{
+    padding-bottom: 15px;
+}
 /*Contacto Form*/
 
 #div-seccion-contacto{
@@ -445,8 +623,8 @@ input[type="submit"]:hover {
     -webkit-tap-highlight-color: transparent;
 }
 
-.footer-link:hover{
-    /* Nacho agregar*/
+/*.footer-link:hover{
+     Nacho agregar
 }
 
 .footer-bottom-container{

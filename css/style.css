@@ -314,7 +314,7 @@ input[type="submit"]:hover {
 
 /* SECCION EMPANADAS*/
 
-.empandas-title{
+/*.empandas-title{
     text-align: center;
 }
 
@@ -367,9 +367,19 @@ input[type="submit"]:hover {
     max-width: 100%;
     width: 100%;
     height: 120%;
-}
+}*/
+
 /* FRANQUICIA */
-.sucursales{
+:root{
+    --negro:#0000;
+    --verde:#00A149;
+    --blanco:#fff;
+    --rojo:#881014;
+    --oscuro:#9e2a2b;
+    --titulos:'Arima Madurai',cursive;
+    --parrafos:'Mulish', sans-serif;
+}
+.franquicias{
     background-image:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5,7,12,0.75)),
     url(/img/fondosucursales.jpg);
     background-repeat: no-repeat;
@@ -377,23 +387,34 @@ input[type="submit"]:hover {
     text-decoration: none;
    
 }
-.sucursalestitle{ 
+/*.franquiciastitle{ 
     box-sizing: border-box; 
     display: flex;
     justify-content: center;
     color: aliceblue;
-    font-size: 3em;
+    font-size: rem;
     min-width: 100vw;
     margin-top: 2%;
     padding-bottom: 70px;
-}
+}*/
+/*.franquiciastext{
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: rem;
+    min-width: 100vw;
+    margin-top: 2%;
+    padding-bottom: 70px;
+
+}*/
 .ubicaciones{
     display: flex;
     min-width: 100vw;
     min-height: 50vh;
     justify-content: space-around;
     align-items: center;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-size: 2em;
     text-align: center;
     background-color: rgba(5, 7, 12, 0.75);
@@ -402,13 +423,45 @@ input[type="submit"]:hover {
 #address1{
     padding-bottom: 15px;
     text-decoration: none;
+    color: #fff;
 }
 #address2{
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: #fff;
 }
 #address3{
     padding-bottom: 15px;
+    text-decoration: none;
+    color: #fff;
 }
+/*.contenedor-nosotros{
+    
+    padding-top: 5rem;
+}*/
+
+.franquiciastitle{
+    flex: 0 0 calc(50% - 1rem) ;
+}
+/*.franquiciastext{
+    font-size: 1rem;
+    color: var(--verde);
+    text-align: center;
+}*/
+
+.franquiciastitle h1{
+    color: var(--blanco);
+    font-size: 2,5rem;
+    text-align: center;
+}
+
+.franquiciastext p{
+    font-size: 1.5rem;
+    text-align: center;
+    /*color: var(--blanco);*/
+  
+}
+
 /*Contacto Form*/
 
 #div-seccion-contacto{
@@ -612,6 +665,7 @@ input[type="submit"]:hover {
     width: 100% !important;
     position: absolute;
 } */
+
 
 /* MediaQ*/
 

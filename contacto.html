@@ -6,14 +6,11 @@
     <meta http-equiv="X-UA-Compatible" c ontent="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
-    <title>Diseño One page</title>
-    <link rel="shortcut icon" href="favicon/pizza_flavi.ico" type="image/x-icon"> 
+    <title>Los Muchachos Pizzeria</title>
+    <link rel="shortcut icon" href="favicon/pizza_flavi.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Oswald:wght@700&family=Raleway:ital,wght@1,300&family=Tiro+Devanagari+Hindi&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Montserrat:wght@100&family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     </script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -26,18 +23,18 @@
             });
         });
     </script>
-    <script src="js/validacion-form.js"></script>
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
 
 <body id="Inicio">
     <header>
-        <nav>
-            <label class="logo">Los Muchachos</label>
+        <nav class="topnav">
+            <h3 class="animate__animated animate__pulse" id="logo">Los Muchachos</h3>
             <ul>
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="pizzas.html">Productos</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="#">Nosotros</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="franquicias.html">Franquicias</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -49,85 +46,86 @@
 
     <article>
         <div id="div-seccion-contacto">
-            <img class="img-fondo-section-form" src="img/pizza-4968645_1280.jpg" alt="fondo-pizza-section-form-contacto">
-        <section id="seccion-contacto">
-            <h2 id="contacto-title">Contacto</h2>
-            <form id="contacto-form" onsubmit="return validarFormulario()">
-               <ul id="contacto-form-list">
-                <li>
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" id="Nombre" placeholder="Ingrese su nombre">
-                </li>
-                <li>
-                    <label for="Apellido">Apellido</label>
-                    <input type="text" id="Apellido" placeholder="Ingrese su apellido">
-                </li>
-                <li>
-                    <label for="Email">Mail</label>
-                    <input type="email" id="Email" placeholder="Ingrese su mail">
-                </li>
-                <li>
-                    <label for="Telefono">Telefono</label>
-                    <input type="tel" id="Telefono" placeholder="Ingrese su telefono">
-                </li>
-                <li>
-                    <label for="Mensaje">Mensaje</label>
-                    <textarea rows="6" id="Mensaje" placeholder="Ingrese su mensaje"></textarea>
-                </li>
-                <li>
-                    <button type="submit" value="ENVIAR">Enviar</button>
-                </li>
-               </ul>
-            </form>
-        </section>
+            <img class="img-fondo-section-form" src="img/pizza-4968645_1280.jpg"
+                alt="fondo-pizza-section-form-contacto">
+            <section id="seccion-contacto">
+                <h2 id="contacto-title">Contacto</h2>
+                <form id="contacto-form" onsubmit="return validarFormulario()">
+                    <ul id="contacto-form-list">
+                        <li>
+                            <label for="Nombre">Nombre</label>
+                            <input type="text" id="Nombre" placeholder="Ingrese su nombre">
+                        </li>
+                        <li>
+                            <label for="Apellido">Apellido</label>
+                            <input type="text" id="Apellido" placeholder="Ingrese su apellido">
+                        </li>
+                        <li>
+                            <label for="Email">Mail</label>
+                            <input type="email" id="Email" placeholder="Ingrese su mail">
+                        </li>
+                        <li>
+                            <label for="Telefono">Telefono</label>
+                            <input type="tel" id="Telefono" placeholder="Ingrese su telefono">
+                        </li>
+                        <li>
+                            <label for="Mensaje">Mensaje</label>
+                            <textarea rows="6" id="Mensaje" placeholder="Ingrese su mensaje"></textarea>
+                        </li>
+                        <li>
+                            <button type="submit" value="ENVIAR">Enviar</button>
+                        </li>
+                    </ul>
+                </form>
+            </section>
         </div>
-        <!-- <script src="js/validacion-form.js"></script> -->
+        
+        <script src="js/validacion-form.js"></script>
     </article>
-
-
-    
 
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section-wrapper">
                 <div class="footer-section">
-                    <h2 class="footer-menu">Ubicacion</h2>
-                    <!-- <div class="footer-map">
-                        <iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.25131529687528!2d-58.37886349375962!3d-34.603629349771275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacef2f15b77%3A0x8bef196b9101ed07!2sAv.%20Corrientes%20870%2C%20C1043AAV%20San%20Nicolas%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1683247363330!5m2!1ses-419!2sar" width="120%" height="70%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div> -->
-                    <!-- <h2 class="footer-menu">Menu</h2>
+                    <h2 class="footer-menu">Menu</h2>
                     <nav class="footer-list">
-                        <li><a href="#Inicio" class="footer-link">Inicio</a></li>
-                        <li><a href="#Productos" class="footer-link">Productos</a></li>
-                        <li><a href="#Servicios" class="footer-link">Servicios</a></li>
-                        <li><a href="#Nosotros" class="footer-link">Nosotros</a></li>
-                        <li><a href="#Franquicia" class="footer-link">Franquicia</a></li>
-                        <li><a href="#Contacto" class="footer-link">Contacto</a></li>
-                    </nav> -->
+                        <li class="footer-list-menu"><a href="index.html" class="footer-link">Home</a></li>
+                        <li class="footer-list-menu"><a href="pizzas.html" class="footer-link">Productos</a></li>
+                        <li class="footer-list-menu"><a href="servicios.html" class="footer-link">Servicios</a></li>
+                        <li class="footer-list-menu"><a href="nosotros.html" class="footer-link">Nosotros</a></li>
+                        <li class="footer-list-menu"><a href="franquicias.html" class="footer-link">Franquicia</a></li>
+                        <li class="footer-list-menu"><a href="contacto.html" class="footer-link">Contacto</a></li>
+                    </nav>
                 </div>
                 <div class="footer-section">
                     <h2 class="footer-menu">Contactenos</h2>
                     <nav class="footer-list">
                         <li class="footer-link">
-                            <H4>Telefono: </H4>4512-8751
+                            <H2>Telefono</H2>
                         </li>
                         <li class="footer-link">
-                            <H4>Whatsapp: </H4>+54 9 11-2554-4114
+                            <p>4512-8751</p>
                         </li>
                         <li class="footer-link">
-                            <H4>Mail: </H4>pizzeria-los-muchachos@gmail.com
+                            <H2>Whatsapp</H2>
+                        </li>
+                        <li class="footer-link">
+                            <p>+54 9 11-2554-4114</p>
+                        </li>
+                        <li class="footer-link">
+                            <H2>Mail</H2>
+                        </li>
+                        <li class="footer-link">
+                            <p>pizzeria-los-muchachos@gmail.com</p>
                         </li>
                     </nav>
                 </div>
                 <div class="footer-section">
                     <h2 class="footer-menu">Siganos</h2>
                     <nav class="footer-list">
-                        <li><a href="www.facebook.com/pizzerialosmuchachos"><img
-                                    src="favicon/redes/icons8-facebook-48.png" /></a></li>
-                        <li><a href="www.twitter.com/pizzerialosmuchachos"><img
-                                    src="favicon/redes/icons8-twitter.svg" /></a></li>
-                        <li><a href="www.instagram.com/pizzerialosmuchachos"><img
-                                    src="favicon/redes/icons8-instagram-48.png" /></a></li>
+                        <li class="icon-redes"><a href="www.facebook.com/pizzerialosmuchachos"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAYFJREFUaEPtWdtNAzEQnOmADkgHQAdQAZRACVABpBIogQ6ghFABUAFQwUSLEik5P3Byp7Mt7Ur3k/PFOzv7tInOhZ3rDwdQm0FnoFkGJN0AeABwXlnJTwD3JF9ieiRdSNIHgEVl5bfbr0heHApAjSj/pwbJqLFzDDiAKRlsjYEvAG8ALECHcgvgdPhjKwB+AdyRfE6xI+lxk/32lrQAwJRfkPzJuVbLAK5ImttkpVUA7ySLCmKrAJYkzbcDkXQ9qPaXAOxpKgai7iPpNaZstOJWLmQBAEknAL7/i4nt+9pZKAbA3MQYKBIHUGSm9KKuGLA2YdgiWPVd7eKTZK26tQ3NtRLJlFnCYmoOmTMGxgKItvFdANi4lU2CgfQCIJlaewFgQf1Um4HY/l2lUQfgLmQWkDTlsYrHwJxp1IPYg9iDOPQBz0LHZCGbqoJD1pKhJLJmLAPJg7Hc/YBdMdlh1NmRSu9+NgaAjag2kh52xTSB0rP8hV+zzmLmzCbOgDMw0gJrmjUzQOTnL/MAAAAASUVORK5CYII="/></a></li>
+                        <li class="icon-redes"><a href="www.twitter.com/pizzerialosmuchachos"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAudJREFUaEPtmIFtFEEMRb8rACogVABUAFRAqABSAaECkgpIKiCpAKiApAJIBUAFIRUYPWlWHHczO57duUMnraXT3WlnvP72t8ce056L7bn9WgD87wguEVgiMNMDC4VaHOju9yW9lXQg6Un6XEn6KenSzPi9Iewzs9+5Z8UIuPuBmaG4i7j7c0kfk/ElnQB4NRiLDZJeS3pqZoetAD5LujWzo7kI3P1E0vugnu+SAAJgooS8KEUnG4EU6tu0+WIOiOT5r0Hjc8tOzQwHZKUEAPSrL50EIjniW4U2Y9jeSWI/9HlgZm/WF0cBsI/QHpkZ3yFxd14I7+fKDZTKJXILgMGIEzM7jVjUyP2SSow/LBWUEgCSh9CVhCgA5MsYEHcnGZ9FwBbWFD0/rB8roxj5uPJyyizV6jznoQ4AitUnAoDE+dTgPQDzARTfHDxQbU4EpgPAcHfHuy8bQPReOg1Aqt0PJcHxs3Qa9jYuou9RrRuIVCHoMJyIkZd2W2Nm1WZzLIm9myXTFN2YWdVxYwDmlsBpZv/dRWU7rikZ7UYl/agp2OJzulKKyKiMcqzTSVqzIff8zsyYHapSTZKO/UzVmJUFDDcbjVtOQRVAOg/oTlHIcLELYYAJNY1VAO5OJRgOM35nJ6OOqK7NDIeFJAKAsW6XyRz2PgirABKFLnZEn1DpXA1NFAAVgXOh1p2Gwl5Y9IsTv3T7UFIcApCiAAjq8pzusmTHXZq4QonbHIHVDanRoyKRG73AMKpC02YJR2Bdc7qz+dChKk02PpzEaxGASpwHXHWETssRt84yvgmAu0MXzgDoM9dwEpZBvZnz687YoFDiOMZi5NDOhg+WAInP04VA9q4zsP+fJaWBhgQlqXolKS+9lnTcw+vhKpQSlZ4c6jBitgpUofSe1UbDVsXD+nAVSj0RlIJORAjh/730Gw8jw83EVW9v50CGAUz10Lb3LQC27eGa/iUCNQ9t+/kSgW17uKZ/7yPwB5uu7DGSgT7HAAAAAElFTkSuQmCC"/></a></li>
+                        <li class="icon-redes"><a href="www.instagram.com/pizzerialosmuchachos"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAzlJREFUaEPtWe1RFUEQnI5AjUCJQIxAjUCNQIlAjUCIQIlAiECJQIhAjECIQIigraZ2r/b27e3Hu9sHr+rN39uP6Zne+TrYlgu2XH/bAbhvD+48sHUeILlvZi/N7K1T/tVMEOdu/08zuwBw2XJeNYVIPjaz74HiLfe0rBWQAwA3NZuqAJB8b2bfzEwgNiFSXiAEJitFACRFlR+lgzp9f1cCkQXgaPN3g5aP7SBP7OXoVAJwYmaiz33KKYAPUwpMAiD5zMxk/d5ybGbiuqgqRR8lLpQXrlKK5AB8MrOvnbU/A+DDsZFUoPiYuPMzAH1bkRwAWeXNDAB/zEwcVuR6PnHOEYBD/42kcsqvxNoR0PB7DoASjBJWi1ybmRQ6j13uEqCSoCzpaXIJ4EUAYOrNKcElE2YOwL/G6HMMQLTLintbUtQbR9yWtwVuKqtfAdhrpRBLygTflXSkVLWQlKe+1G4AkDR2zgO1AFYs75SThb1FRUfR6ihUmGQ1TXsBEOf3faJx9FDWFh1SIoWVXe/qHLdexVsqdI729wIwCm8kpcxUxPEKyROvg4dbRaVeAIYEQ7IlbwxvJhM6u3vgGoCy9Z208NnV/UPEIVl8bz08MIrNJMXrIpcd3hsATwLwCqVPcxHpoQGIvaeaa/BmMt53CKOxFatDopkNpYEr2ZU0s9LDA7owfMSqJNVy1siDeMRSNC7GarwQv52pCrR7FNIFo47J0UF1zVQReKaaP0hkSniqPou9di8KCcQJgIOoRBCdVOf7jKwEp3WjJp3k70zW3ogH/CWHcZ1Teggk9V4mW8V4/zoeKMbm6BJVoyotsvMc1xdI+al6KYX9FkCSZks3NFJej1JhcpiwubehGkm0KvYMCQRrNTRzW0rpIRCyXDZJlegW5o0Vak1tbizOKnSYtWStpn5TY5UaZO1jFZ2aGXPUXLrUmvUGWw6A+CseZyvFpTRNnHOr97P2aNGB2N7hrreIm1ArPG7KE7K8So754/UAhOik/jU1+luSRafKFaWE6C8s/h+INXOTBLWDopZAKaPWdmIpoBeuKPSjlz6/mJY08ZJnNXtgycuXOGsHYAkrzjlj54E51lti738u02hAECdfZgAAAABJRU5ErkJggg=="/></a></li>
                     </nav>
                 </div>
             </div>

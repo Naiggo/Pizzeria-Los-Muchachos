@@ -10,10 +10,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-h1,h2,h3{
+h1, h2, h3{
     font-family: 'Arima Madurai',cursive;
 }
-p,a,input,textarea {
+p, a, input, textarea {
     font-family: 'Mulish', sans-serif;
 }
 
@@ -62,8 +62,8 @@ body {
     border-radius: 3px;
 }
 
-a.active,
-a:hover {
+.topnav a.active,
+.topnav a:hover {
     border: 1px solid white;
     transition: .5s;
 }
@@ -292,16 +292,14 @@ input[type="submit"]:hover {
 .seccion-pizzas{
     background-image: linear-gradient(180deg, #0e1118, #333);
     position: relative;
-    /* top: 100px;
-    margin-bottom: 120px; */
 }
 
 .tarjeta {
     background-color: #ffffff;
     /* max-height: 510px;
     height: 510px; */
-    max-height: 550px;
-    height: 550px;
+    max-height: 600px;
+    height: 600px;
     max-width: 300px;
     width: 300px;
     border: 1px solid #ffffff;
@@ -323,19 +321,19 @@ input[type="submit"]:hover {
     padding: 10px;
 }
 
-.textocard h2 {
-    padding-top: 2px;
-    padding-bottom: 2px;
+.textocard-nombre{
+    height: 100px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
-.textocard p {
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-align: center;
+.textocard h2 {
+    padding-top: 25px;
 }
 
 .textocard-descripcion{
+    margin-bottom: 20px;
+    text-align: center;
     min-height: 70px;
     max-height: 70px;
     height: 70px;
@@ -357,13 +355,13 @@ input[type="submit"]:hover {
 }
 
 .contenedor {
-    height: 1835px;
+    height: 1980px;
     display: grid;
     justify-content: center;
     justify-items: center;
     align-items: center;
     grid-template-columns:repeat(4, 350px);
-    grid-template-rows:repeat(3, 600px);
+    grid-template-rows:repeat(3, 650px);
     column-gap: 20px;
 }
 
@@ -563,7 +561,7 @@ input[type="submit"]:hover {
 
 #contacto-form-list li label {
     padding: 8px;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: .09em;
     text-transform: uppercase;
 }
@@ -587,6 +585,7 @@ input[type="submit"]:hover {
 
 .footer {
     background: #9e2a2b;
+    margin-bottom: -50px;
 }
 
 .footer-container {
@@ -630,17 +629,17 @@ input[type="submit"]:hover {
 }
 
 .footer-menu {
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
     color: #ffffff;
-    font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     flex-shrink: 3;
 }
 
 .footer-menu-c{
     color:#ffffff;
-    font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
@@ -674,8 +673,36 @@ input[type="submit"]:hover {
     -webkit-tap-highlight-color: transparent;
 }
 
-/*.footer-link:hover{
-     Nacho agregar
+.footer-link h2{
+    color:rgb(255, 255, 255);
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.footer-link p{
+    color:rgb(255, 255, 255);
+    -webkit-text-stroke: 0.1px black;
+    padding-bottom: 10%;
+}
+
+.icon-redes{
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.footer-list-menu{
+    padding-bottom: 9px;
+}
+
+.footer-list-menu a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-list-menu a:hover {
+    border: 1px solid white;
+    transition: .5s;
 }
 
 .footer-bottom-container{
@@ -698,6 +725,7 @@ input[type="submit"]:hover {
     }
 }
 
+
 @media (max-width: 900px) {
 
     #div-seccion-contacto {
@@ -712,6 +740,19 @@ input[type="submit"]:hover {
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .footer-bottom-container{
+        margin-top: 20%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .footer-bottom-container{
+        margin-top: 20%;
+        justify-content: center;
     }
 }
 
@@ -735,4 +776,4 @@ input[type="submit"]:hover {
     .footer-map {
         width: 10%;
     }
-    }
+}

@@ -296,8 +296,6 @@ input[type="submit"]:hover {
 
 .tarjeta {
     background-color: #ffffff;
-    /* max-height: 510px;
-    height: 510px; */
     max-height: 600px;
     height: 600px;
     max-width: 300px;

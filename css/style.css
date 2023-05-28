@@ -628,8 +628,9 @@ input[type="submit"]:hover {
 }
 
 .footer-menu {
-    font-size: 30px;
-    -webkit-text-stroke: 1px black;
+    margin-top: -30px;
+    font-size: 25px;
+    -webkit-text-stroke: 0.5px black;
     color: #ffffff;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -673,9 +674,10 @@ input[type="submit"]:hover {
 }
 
 .footer-link h2{
+    font-size: 17px;
     color:rgb(255, 255, 255);
     padding-top: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .footer-link p{
@@ -686,7 +688,7 @@ input[type="submit"]:hover {
 
 .icon-redes{
     padding-top: 4%;
-    padding-bottom: 4%;
+    padding-bottom: 15%;
 }
 
 .footer-list-menu{
@@ -694,7 +696,7 @@ input[type="submit"]:hover {
 }
 
 .footer-list-menu a{
-    font-size: 20px;
+    font-size: 17px;
     text-decoration: none;
     color: #ffffff;
 }
@@ -750,8 +752,13 @@ input[type="submit"]:hover {
 @media (max-width: 1000px) {
 
     .footer-bottom-container{
-        margin-top: 20%;
+        margin-top: 5%;
         justify-content: center;
+    }
+
+    .icon-redes{
+        padding-top: 1%;
+        padding-bottom: 0;
     }
 }
 
@@ -770,9 +777,5 @@ input[type="submit"]:hover {
 
     .footer-bottom-container {
         flex-direction: row;
-    }
-
-    .footer-map {
-        width: 10%;
     }
 }

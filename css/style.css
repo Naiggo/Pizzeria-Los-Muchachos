@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +8,20 @@
 }
 
 :root{
+    --verde:#00A149;
+    --blanco:#fff;
+    --rojo:#881014;
+    --oscuro:#9e2a2b; 
+    --negro:#0000;  
+    --titulos:'Arima Madurai',cursive;
+    --parrafos:'Mulish', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
-
-h1, h2, h3{
-    font-family: 'Arima Madurai',cursive;
+h1,h2, h3{
+    font-family: var(--titulos);
 }
-p, a, input, textarea {
-    font-family: 'Mulish', sans-serif;
+p, a,input, textarea{
+    font-family: var(--parrafos);
 }
 
 body {
@@ -23,6 +30,9 @@ body {
     position: relative;
     padding-bottom: 3em;
     min-height: 100vh;
+}
+img{
+    max-width: 100%;
 }
 
 .topnav {
@@ -56,7 +66,6 @@ body {
 
 .topnav a {
     color: white;
-    /* font-size: 18px; */
     text-transform: uppercase;
     padding: 7px 10px;
     border-radius: 3px;
@@ -105,7 +114,6 @@ body {
         height: 100vh;
         background: rgb(190, 83, 40);
         top: 80px;
-        /* left: -100%; */
         text-align: center;
         transition: .5s;
         right: -130%;
@@ -129,7 +137,6 @@ body {
     }
 
     .topnav ul.show {
-        /* left: 0; */
         right: -20px;
     }
 }
@@ -145,20 +152,15 @@ body {
     position: absolute;
     color: aliceblue;
     width: 100%;
-    height: 55%;
+    height: 65%;
     justify-content: center;
     align-items: center;
     background: rgba(5, 7, 12, 0.75);
-    ;
     z-index: 1;
     font-size: 2.5em;
 }
 
-/* @media(max-width: 2000px){
-.onslider{
-    height: 59%;
-} 
-} */
+
 @media(max-width:1000px) {
     .onslider {
         height: 41.1%;
@@ -296,8 +298,6 @@ input[type="submit"]:hover {
 
 .tarjeta {
     background-color: #ffffff;
-    /* max-height: 510px;
-    height: 510px; */
     max-height: 600px;
     height: 600px;
     max-width: 300px;
@@ -410,14 +410,12 @@ input[type="submit"]:hover {
     color: aliceblue;
     font-size: 1.3em;
     margin-left: 15px;
-    /* margin-right: 200px; */
     max-width: 50%;
 }
 
 .imgserv {
     display: flex;
     justify-content: center;
-    /* align-items:flex-end; */
     align-items: center;
     padding-right: 100px;
 }
@@ -449,47 +447,6 @@ input[type="submit"]:hover {
 }
 /*NOSOTROS*/
 
-:root{
-    --verde:#00A149;
-    --blanco:#fff;
-    --rojo:#881014;
-    --oscuro:#9e2a2b; 
-    --negro:#0000;  
-    --titulos:'Arima Madurai',cursive;
-    --parrafos:'Mulish', sans-serif;
-}
-/*propiedad box-sizing para que el contenedor padre respete su tamaño*/
-html{
-    box-sizing: border-box;
-    /*1rem = 10px*/
-    font-size: 62.5%;
-}
-body{
-    font-size: 1.6rem;
-    overflow-x: hidden;
-}
-
-*,*::after, *::before{
-    box-sizing: inherit;
-}
-/*globales/centrar elementos dentro del espacio*/
-/*.contenedor{
-    max-width: 120rem;
-    margin: 0 auto;
-    width: 95%;
-}*/
-
-h1,h2, h3{
-    font-family: var(--titulos);
-}
-p, a{
-    font-family: var(--parrafos);
-}
-
-img{
-    max-width: 100%;
-}
-
 .btn{
     text-decoration: none;
     color: var(--blanco);
@@ -520,7 +477,6 @@ img{
 .btn-rojo{
     background-color: var(--rojo);
     font-weight: bold;
-    /*display: inline-block;*/
     margin-top: 2rem;
     margin-bottom: 2rem; 
     display: flex; 
@@ -619,6 +575,7 @@ video{
 .imagenes-nosotros{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 150px;
 }
 .imagenes-nosotros img{
     border-radius: 5px;
@@ -755,7 +712,6 @@ video{
     margin-bottom: 1.5rem;
 }
 
-
 .btn-rojo2{
     background-color: var(--rojo);
     font-weight: bold;
@@ -768,8 +724,9 @@ video{
     background-color: var(--oscuro);
 }
 
-
 /*CONTACTOS*/
+
+/*Contacto Form*/
 
 #div-seccion-contacto {
     top: 0;
@@ -902,8 +859,9 @@ video{
 }
 
 .footer-menu {
-    font-size: 30px;
-    -webkit-text-stroke: 1px black;
+    margin-top: -30px;
+    font-size: 25px;
+    -webkit-text-stroke: 0.5px black;
     color: #ffffff;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -947,9 +905,10 @@ video{
 }
 
 .footer-link h2{
+    font-size: 17px;
     color:rgb(255, 255, 255);
     padding-top: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .footer-link p{
@@ -960,7 +919,7 @@ video{
 
 .icon-redes{
     padding-top: 4%;
-    padding-bottom: 4%;
+    padding-bottom: 15%;
 }
 
 .footer-list-menu{
@@ -968,7 +927,7 @@ video{
 }
 
 .footer-list-menu a{
-    font-size: 20px;
+    font-size: 17px;
     text-decoration: none;
     color: #ffffff;
 }
@@ -1024,8 +983,13 @@ video{
 @media (max-width: 1000px) {
 
     .footer-bottom-container{
-        margin-top: 20%;
+        margin-top: 5%;
         justify-content: center;
+    }
+
+    .icon-redes{
+        padding-top: 1%;
+        padding-bottom: 0;
     }
 }
 
@@ -1044,9 +1008,5 @@ video{
 
     .footer-bottom-container {
         flex-direction: row;
-    }
-
-    .footer-map {
-        width: 10%;
     }
 }

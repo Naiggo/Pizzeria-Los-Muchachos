@@ -520,9 +520,12 @@ img{
 .btn-rojo{
     background-color: var(--rojo);
     font-weight: bold;
-    display: inline-block;
+    /*display: inline-block;*/
     margin-top: 2rem;
-    margin-bottom: 2rem;    
+    margin-bottom: 2rem; 
+    display: flex; 
+    justify-content: center;
+ 
 }
 .btn-rojo:hover{
     background-color: var(--oscuro);
@@ -704,10 +707,10 @@ video{
 }
 .texto-franquicias, .imagenes-nosotros{
    
-    flex: 0 0 calc(50% - 1rem) ;
+    flex: 0 0 calc(50% - 3rem) ;
 }
 .texto-franquicias .bienvenida{
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--rojo);
     text-align: center;
 }
@@ -726,6 +729,7 @@ video{
     }
 }
 .texto-franquicias p{
+    padding-left: 1rem;
     font-size: 2rem;
     text-align: center;
 }
@@ -748,84 +752,22 @@ video{
     margin-bottom: 1.5rem;
 }
 
-.menu{
-    padding-top: 4rem;
-}
+
 .btn-rojo2{
-    
     background-color: var(--rojo);
     font-weight: bold;
     display: inline-block;
     margin-top: 2rem;
     margin-bottom: 2rem; 
-        
+    margin-left: 17rem;  
 }
 .btn-rojo2:hover{
-
     background-color: var(--oscuro);
 }
 
 
-
-/*.sucursalestitle {
-    font-family: var(--titulos);
-    /*box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    color: aliceblue;
-    font-size: 1em;
-    min-width: 100vw;
-    margin-top: 2%;
-    padding-bottom: 70px;
-}
-.Franquicia-text-1 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-    text-align: center;
-    font-family: var(--parrafos);
-    display: flex;
-    justify-content: center;
-    color: var(--blanco);
-  
-}
-.Franquicia-text-2 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-    text-align: center;
-    font-family: var(--parrafos);
-    display: flex;
-    justify-content: center;
-    color: var(--blanco);
-
-}
-.btn{
-    text-decoration: none;
-    color: var(--blanco);
-    font-size: 2rem;
-    padding: 1rem 5rem;
-    border-radius: 5px;
-    transition: all .3s ease-in-out;
-}
-
-@media(min-width: 768px) {
-    .btn{
-        font-size: 2.2rem;
-    }
-}
-.bordes{
-    border: 3px solid var(--blanco);
-}
-@media(min-width: 768px) {
-    .franquicia{
-        border: 4px solid var(--blanco);
-    }
-}
-
-.franquicia:hover{
-    color: var(--verde);
-    background-color: var(--blanco);
-}*/
 /*CONTACTOS*/
+
 #div-seccion-contacto {
     top: 0;
     display: flex;

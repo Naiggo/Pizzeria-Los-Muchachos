@@ -20,13 +20,22 @@
 h1,h2, h3{
     font-family: var(--titulos);
 }
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    padding-top: 70px;
+    text-align: center;
+}
 p, a,input, textarea{
     font-family: var(--parrafos);
 }
 
 body {
     background: rgb(248, 248, 248);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--parrafos);
     position: relative;
     padding-bottom: 3em;
     min-height: 100vh;
@@ -51,6 +60,7 @@ img{
     position: absolute;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    font-family: var(--titulos);
 }
 
 .topnav ul {
@@ -158,6 +168,7 @@ img{
     background: rgba(5, 7, 12, 0.75);
     z-index: 1;
     font-size: 2.5em;
+    font-family: var(--titulos);
 }
 
 
@@ -224,7 +235,7 @@ img{
     }
 }
 
-h1 {
+/* h1 {
     font-family: 'Tiro Devanagari Hindi', serif;
     font-size: 3em;
     margin: 0;
@@ -240,7 +251,7 @@ h2 {
 p {
     font-family: 'Raleway', sans-serif;
     line-height: 1.5;
-}
+} */
 
 fieldset {
     border: 1px solid #ccc;
@@ -288,7 +299,11 @@ input[type="submit"]:hover {
     top: 80%;
     left: 5%;
     color:#ffffff;
-    font-size: 65px;
+    font-size: 60px;
+}
+
+#titulo-pizzas h3{
+    font-family: var(--titulos);
 }
 
 .seccion-pizzas{
@@ -324,10 +339,16 @@ input[type="submit"]:hover {
 .textocard-nombre{
     height: 90px;
     text-align: center;
+    font-family: var(--titulos);
+}
+
+.textocard-nombre h2{
+    font-family: var(--titulos);
 }
 
 .textocard h2 {
     padding-top: 25px;
+    font-family: var(--parrafos);
 }
 
 .textocard-descripcion{
@@ -861,7 +882,6 @@ video{
 .footer-menu {
     margin-top: -30px;
     font-size: 25px;
-    -webkit-text-stroke: 0.5px black;
     color: #ffffff;
     letter-spacing: 0.1em;
     text-transform: uppercase;

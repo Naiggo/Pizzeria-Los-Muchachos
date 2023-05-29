@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +8,20 @@
 }
 
 :root{
+    --verde:#00A149;
+    --blanco:#fff;
+    --rojo:#881014;
+    --oscuro:#9e2a2b; 
+    --negro:#0000;  
+    --titulos:'Arima Madurai',cursive;
+    --parrafos:'Mulish', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
-
-h1, h2, h3{
-    font-family: 'Arima Madurai',cursive;
+h1,h2, h3{
+    font-family: var(--titulos);
 }
-p, a, input, textarea {
-    font-family: 'Mulish', sans-serif;
+p, a,input, textarea{
+    font-family: var(--parrafos);
 }
 
 body {
@@ -23,6 +30,9 @@ body {
     position: relative;
     padding-bottom: 3em;
     min-height: 100vh;
+}
+img{
+    max-width: 100%;
 }
 
 .topnav {
@@ -56,7 +66,6 @@ body {
 
 .topnav a {
     color: white;
-    /* font-size: 18px; */
     text-transform: uppercase;
     padding: 7px 10px;
     border-radius: 3px;
@@ -105,7 +114,6 @@ body {
         height: 100vh;
         background: rgb(190, 83, 40);
         top: 80px;
-        /* left: -100%; */
         text-align: center;
         transition: .5s;
         right: -130%;
@@ -129,7 +137,6 @@ body {
     }
 
     .topnav ul.show {
-        /* left: 0; */
         right: -20px;
     }
 }
@@ -149,16 +156,11 @@ body {
     justify-content: center;
     align-items: center;
     background: rgba(5, 7, 12, 0.75);
-    ;
     z-index: 1;
     font-size: 2.5em;
 }
 
-/* @media(max-width: 2000px){
-.onslider{
-    height: 59%;
-} 
-} */
+
 @media(max-width:1000px) {
     .onslider {
         height: 41.1%;
@@ -408,14 +410,12 @@ input[type="submit"]:hover {
     color: aliceblue;
     font-size: 1.3em;
     margin-left: 15px;
-    /* margin-right: 200px; */
     max-width: 50%;
 }
 
 .imgserv {
     display: flex;
     justify-content: center;
-    /* align-items:flex-end; */
     align-items: center;
     padding-right: 100px;
 }
@@ -445,53 +445,286 @@ input[type="submit"]:hover {
         padding: 0;
     }
 }
+/*NOSOTROS*/
+
+.btn{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 2rem;
+    padding: 1rem 5rem;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+@media(min-width: 768px) {
+    .btn{
+        font-size: 2.2rem;
+    }
+}
+.bordes{
+    border: 3px solid var(--blanco);
+}
+@media(min-width: 768px) {
+    .bordes{
+        border: 4px solid var(--blanco);
+    }
+}
+
+.bordes:hover{
+    color: var(--verde);
+    background-color: var(--blanco);
+}
+.btn-rojo{
+    background-color: var(--rojo);
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+    display: flex; 
+    justify-content: center;
+ 
+}
+.btn-rojo:hover{
+    background-color: var(--oscuro);
+}
+
+/*video*/
+.contenido-header{
+    position: relative;
+}
+
+.contenido-header::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+}
+
+.texto-encabezado{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texto-encabezado h2{
+    color: var(--blanco);
+    font-size: 4rem;
+}
+
+@media(min-width: 768px) {
+    .texto-encabezado h2{
+        font-size: 8rem;
+    }
+}
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+/*sobre nosotros*/
+.contenedor-nosotros{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
+}
+@media(min-width: 768px) {
+    .contenedor-nosotros{
+        display: flex;
+         justify-content: space-between;
+    }   
+}
+.texto-nosotros, .imagenes-nosotros{
+   
+    flex: 0 0 calc(50% - 1rem) ;
+}
+.texto-nosotros .bienvenida{
+    font-size: 4rem;
+    color: var(--verde);
+    text-align: center;
+}
+@media(min-width: 768px) {
+    .texto-nosotros .bienvenida{
+        text-align: left;
+    }
+}
+.texto-nosotros h1{
+    font-size: 5rem;
+    text-align: center;
+}
+@media(min-width: 768px) {
+    .texto-nosotros h1{
+        text-align: left;
+    }
+}
+.texto-nosotros p{
+    font-size: 2rem;
+    text-align: center;
+}
+@media(min-width: 768px) {
+    .texto-nosotros p{
+        text-align: left;
+    }
+}
+.imagenes-nosotros{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+.imagenes-nosotros img{
+    border-radius: 5px;
+}
+.imagen1, .imagenes2{
+    flex: 0 0 calc(50% - 1rem);
+}
+.imagenes2 img{
+    margin-bottom: 1.5rem;
+}
+.menu{
+    padding-top: 4rem;
+}
+
+/*separador translúcido*/
+.separador::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: -1;
+}
+
+.contenido-separador{
+    padding: 5rem;
+}
+
+.contenido-separador h2{
+    font-size: 4rem;
+    color: var(--blanco);
+    text-align: center;
+}
+@media(min-width: 768px) {
+    .contenido-separador h2{
+        text-align: left;
+        font-size: 5rem;
+        color: var(--blanco);
+    }
+}
+.contenido-separador p{
+    color: var(--blanco);
+    font-size: 3rem;
+    text-align: center;
+}
+@media(min-width: 768px) {
+    .contenido-separador p{
+        text-align: left;
+    }
+}
+
+/*Mapas*/
+.encontrar{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.mapas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1em 3em;
+}
+.mapa{
+    flex: 0 0 calc(33.3% - 4rem);
+    border: 1.5px solid #e1e1e1;
+    padding: 2em;
+    border-radius: 5px;
+
+}
+
 
 /* FRANQUICIA */
-.sucursales {
-    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
-        url(/img/fondosucursales.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-decoration: none;
-
-}
-
-.sucursalestitle {
-    box-sizing: border-box;
+.contenedor-franquicias{
     display: flex;
-    justify-content: center;
-    color: aliceblue;
-    font-size: 2em;
-    min-width: 100vw;
-    margin-top: 2%;
-    padding-bottom: 70px;
+    justify-content: space-between;
+    min-width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
 }
-
-.ubicaciones {
-    display: flex;
-    min-width: 100vw;
-    min-height: 50vh;
-    justify-content: space-around;
-    align-items: center;
-    color: aliceblue;
-    font-size: 2em;
+@media(min-width: 768px) {
+    .contenedor-franquicias{
+        display: flex;
+         justify-content: space-between;
+    }   
+}
+.texto-franquicias, .imagenes-nosotros{
+   
+    flex: 0 0 calc(50% - 3rem) ;
+}
+.texto-franquicias .bienvenida{
+    font-size: 3rem;
+    color: var(--rojo);
     text-align: center;
-    background-color: rgba(5, 7, 12, 0.75);
-    text-decoration: none;
+}
+@media(min-width: 768px) {
+    .texto-franquicias .bienvenida{
+        text-align: center;
+    }
+}
+.texto-franquicias h1{
+    font-size: 4rem;
+    text-align: center;
+}
+@media(min-width: 768px) {
+    .texto-franquicias h1{
+        text-align: center;
+    }
+}
+.texto-franquicias p{
+    padding-left: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+@media(min-width: 768px) {
+    .texto-franquicias p{
+        text-align: center;
+    }
+}
+.imagenes-franquicias{
+    display: flex;
+    justify-content: space-between;
+}
+.imagenes-franquicias img{
+    border-radius: 5px;
+}
+.imagen1, .imagenes2{
+    flex: 0 0 calc(50% - 1rem);
+}
+.imagenes2 img{
+    margin-bottom: 1.5rem;
 }
 
-#address1 {
-    padding-bottom: 15px;
-    text-decoration: none;
+.btn-rojo2{
+    background-color: var(--rojo);
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+    margin-left: 17rem;  
+}
+.btn-rojo2:hover{
+    background-color: var(--oscuro);
 }
 
-#address2 {
-    padding-bottom: 20px;
-}
-
-#address3 {
-    padding-bottom: 15px;
-}
+/*CONTACTOS*/
 
 /*Contacto Form*/
 

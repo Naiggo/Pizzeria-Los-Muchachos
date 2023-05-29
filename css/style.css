@@ -170,6 +170,7 @@ img{
     width: 100%;
     height: 64.5%;
     justify-content: center;
+    /* flex-direction: column; */
     /* align-items: center; */
     background: rgba(5, 7, 12, 0.75);
     z-index: 1;
@@ -178,11 +179,28 @@ img{
     text-align: center;
 }
 
+#logo_s{
+   position: absolute;
+   display: flex;
+   justify-content: center; 
+   padding-left: 37%;
+   padding-right: 37%;
+   bottom: 30%;
+   height: 35%;
+   z-index: 2;
+} 
+
 
 @media(max-width:1000px) {
     .onslider {
         height: 35%;
         font-size: 1rem;
+    }
+    #logo_s{
+        bottom: 62%;
+        height: 23%;
+        padding-left: 33%;
+        padding-right: 33%;
     }
 }
 
@@ -190,11 +208,21 @@ img{
     .onslider {
         height: 33.6%;
     }
+    #logo_s{
+        bottom: 63%;
+        height: 22%;
+    }
 }
 
 @media(max-width: 600px){
     .onslider{
         height: 26.5%;
+    }
+    #logo_s{
+        bottom: 70%;
+        height: 13%;
+        padding-left: 33%;
+        padding-right: 33%;
     }
 }
 

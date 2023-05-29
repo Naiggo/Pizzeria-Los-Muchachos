@@ -444,7 +444,7 @@ input[type="submit"]:hover {
 
 .servicios {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
-        url(/img/fondoservicios.jpg);
+    url(img/fondoservicios.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

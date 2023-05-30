@@ -612,8 +612,8 @@ video{
     }   
 }
 .texto-nosotros, .imagenes-nosotros{
-   
     flex: 0 0 calc(50% - 1rem) ;
+    padding-bottom: 0;
 }
 .texto-nosotros .bienvenida{
     font-size: 4rem;
@@ -703,25 +703,38 @@ video{
 
 /*Mapas*/
 
+.ubicacion{
+    padding-bottom: 50px;
+}
+
 .encontrar{
+    padding-top: 0;
     text-align: center;
     font-size: 4rem;
 }
 
 .mapas{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 1em 3em;
+    /* padding: 1em 3em; */
 }
+
 .mapa{
+    max-width: 350px;
+    max-height: 250px;
+    width: 350px;
+    height: 250px;
     flex: 0 0 calc(33.3% - 4rem);
     border: 1.5px solid #e1e1e1;
-    padding: 2em;
+    /* padding: 2em; */
     border-radius: 5px;
-
+    text-align: center;
 }
 
+.mapa iframe{
+    margin-top: 25px;
+}
 
 /* FRANQUICIA */
 
